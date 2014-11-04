@@ -1,0 +1,28 @@
+(source gnu)
+(source melpa)
+(source marmalade)
+
+;; Auto-complete
+(depends-on "auto-complete")
+(depends-on "fuzzy")
+(depends-on "popup")
+
+;; Anything
+(depends-on "anything")
+
+;; Color-theme
+(depends-on "solarized-theme")
+
+;; Progmodes
+(depends-on "ruby-mode")
+(depends-on "rhtml-mode")
+(depends-on "coffee-mode")
+(depends-on "yaml-mode")
+
+;; Ruby
+(depends-on "ruby-end")
+(depends-on "ruby-block")
+(depends-on "ruby-electric")
+
+;; Yasnippet
+(depends-on "yasnippet")
