@@ -22,7 +22,6 @@
 ;; Ruby
 (depends-on "ruby-end")
 (depends-on "ruby-block")
-(depends-on "ruby-electric")
 
 ;; Yasnippet
 (depends-on "yasnippet")
