@@ -67,7 +67,6 @@
 (setq-default indent-tabs-mode nil)
 
 ;; タブ幅
-(setq-default tab-width 2)
 (setq default-tab-width 2)
 
 ;; yes or noをy or n
