@@ -52,11 +52,11 @@ function prompt-git-current-branch {
 	if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
 		color=%F{64}
 	elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
-		color=%F{136}
+		color=%F{160}
 	elif [[ -n `echo "$st" | grep "^# Untracked"` ]]; then
-                color=%B%F{160}
+                color=%B%F{166}
         else
-                color=%F{160}
+                color=%F{136}
         fi
 
         echo " ( $color$name$action%f )"
