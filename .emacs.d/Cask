@@ -24,3 +24,6 @@
 
 ;; Yasnippet
 (depends-on "yasnippet")
+
+;; Auto-save
+(depends-on "auto-save-buffers-enhanced")

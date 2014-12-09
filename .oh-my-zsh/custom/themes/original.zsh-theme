@@ -48,18 +48,18 @@ function prompt-git-current-branch {
 		return
 	fi
 
-        st=`git status 2> /dev/null`
+  st=`git status 2> /dev/null`
 	if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
 		color=%F{64}
 	elif [[ -n `echo "$st" | grep "^nothing added"` ]]; then
-		color=%F{160}
+		color=%F{136}
 	elif [[ -n `echo "$st" | grep "^# Untracked"` ]]; then
-                color=%B%F{166}
-        else
-                color=%F{136}
-        fi
+    color=%B%F{160}
+  else
+    color=%F{160}
+  fi
 
-        echo " ( $color$name$action%f )"
+  echo " ( $color$name$action%f )"
 }
 
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
