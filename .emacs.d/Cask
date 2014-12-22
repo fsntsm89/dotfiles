@@ -27,3 +27,6 @@
 
 ;; Auto-save
 (depends-on "auto-save-buffers-enhanced")
+
+;; Git
+(depends-on "magit")
