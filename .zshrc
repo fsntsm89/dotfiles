@@ -85,3 +85,6 @@ export TERM='xterm-256color'
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init - zsh)"
+
+# postgresql
+export PGDATA=/usr/local/var/postgres
