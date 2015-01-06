@@ -133,6 +133,9 @@
 ;; Endでバッファの最後に
 (global-set-key (kbd "<end>") 'move-end-of-line)
 
+;; Window切り替え
+(global-set-key [C-tab] 'ns-next-frame)
+
 ;; アクティブでないウィンドウのカーソルを非表示
 (setq cursor-in-non-selected-windows nil)
 
