@@ -129,9 +129,13 @@
 
 ;; Homeでバッファの先頭に
 (global-set-key (kbd "<home>") 'move-beginning-of-line)
+;; Command + leftでバッファの先頭に
+(global-set-key (kbd "<s-left>") 'move-beginning-of-line)
 
 ;; Endでバッファの最後に
 (global-set-key (kbd "<end>") 'move-end-of-line)
+;; Command + rightでバッファの先頭に
+(global-set-key (kbd "<s-right>") 'move-end-of-line)
 
 ;; Window切り替え
 (global-set-key [C-tab] 'ns-next-frame)
