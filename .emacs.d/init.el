@@ -131,6 +131,12 @@
 (global-set-key (kbd "<home>") 'move-beginning-of-line)
 ;; Command + leftでバッファの先頭に
 (global-set-key (kbd "<s-left>") 'move-beginning-of-line)
+;; 行頭とインデントを含まない行頭を交互に
+(defun move-beginning-of-line()
+  (interactive)
+  (if (bolp)
+      (back-to-indentation)
+    (beginning-of-line)))
 
 ;; Endでバッファの最後に
 (global-set-key (kbd "<end>") 'move-end-of-line)
