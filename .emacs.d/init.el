@@ -488,4 +488,3 @@
 (add-hook 'pomodoro:finish-work-hook 'start/pomodoro-notification)
 (add-hook 'pomodoro:finish-rest-hook 'finish/pomodoro-notification)
 (add-hook 'pomodoro:long-rest-hook 'finish/pomodoro-notification)
-
