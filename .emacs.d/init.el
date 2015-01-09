@@ -214,7 +214,7 @@
 ;; ------------------------------------------------------------------------
 ;; @ auto-save
 ;; 指定のアイドル秒で保存
-(setq auto-save-buffers-enhanced-interval 2)
+(setq auto-save-buffers-enhanced-interval 1.5)
 ;; バージョン管理システムのみ有効
 (auto-save-buffers-enhanced-include-only-checkout-path t)
 (auto-save-buffers-enhanced t)
