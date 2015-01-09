@@ -127,16 +127,15 @@
 (setq fill-column 80)
 (setq-default auto-fill-mode t)
 
-;; Homeでバッファの先頭に
-(global-set-key (kbd "<home>") 'move-beginning-of-line)
-;; Command + leftでバッファの先頭に
-(global-set-key (kbd "<s-left>") 'move-beginning-of-line)
+;; Homeでインデントの先頭に
+(global-set-key (kbd "<home>") 'back-to-indentation-or-beginning)
+;; Command + leftでインデントの先頭に
+(global-set-key (kbd "<s-left>") 'back-to-indentation-or-beginning)
 ;; 行頭とインデントを含まない行頭を交互に
-(defun move-beginning-of-line()
+(defun back-to-indentation-or-beginning ()
   (interactive)
-  (if (bolp)
-      (back-to-indentation)
-    (beginning-of-line)))
+  (if (= (point) (progn (back-to-indentation) (point)))
+      (beginning-of-line)))
 
 ;; Endでバッファの最後に
 (global-set-key (kbd "<end>") 'move-end-of-line)
