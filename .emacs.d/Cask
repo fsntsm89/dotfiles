@@ -30,3 +30,7 @@
 
 ;; Git
 (depends-on "magit")
+
+
+;; Smooth-Scroll
+(depends-on "smooth-scroll")
