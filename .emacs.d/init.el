@@ -443,9 +443,9 @@
 ;(hiwin-mode)
 
 ;; erlang-mode
-(setq load-path (cons "/usr/local/Cellar/erlang/17.3/lib/erlang/lib/tools-2.7/emacs" load-path))
-(setq erlang-root-dir "/usr/local/Cellar/erlang/17.3/lib/erlang/lib")
-(setq exec-path (cons "/usr/local/Cellar/erlang/17.3/lib/erlang/bin" exec-path))
+(setq load-path (cons "/usr/local/Cellar/erlang/17.5/lib/erlang/lib/tools-2.7.2/emacs" load-path))
+(setq erlang-root-dir "/usr/local/Cellar/erlang/17.5/lib/erlang/lib")
+(setq exec-path (cons "/usr/local/Cellar/erlang/17.5/lib/erlang/bin" exec-path))
 (require 'erlang-start)
 
 ;; ------------------------------------------------------------------------
