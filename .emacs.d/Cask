@@ -31,6 +31,8 @@
 ;; Git
 (depends-on "magit")
 
-
 ;; Smooth-Scroll
 (depends-on "smooth-scroll")
+
+;; Frame-Restore
+(depends-on "frame-restore")

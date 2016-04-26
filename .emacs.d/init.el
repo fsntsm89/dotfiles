@@ -186,6 +186,10 @@
        default-frame-alist))
 (setq initial-frame-alist default-frame-alist)
 
+;; 終了時のウィンドウ位置保存、復元
+(desktop-save-mode)
+(frame-restore-mode)
+
 ;; ------------------------------------------------------------------------
 ;; @ sudo
 ;; 他のユーザーが所有しているファイルをsudoで開き直すか聞く
